@@ -16,7 +16,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         adView = AdView(this, "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID", AdSize.BANNER_HEIGHT_50)
-        //val adContainer = findViewById<View>(R.id.banner_container) as LinearLayout
         val adContainer = findViewById<LinearLayout>(R.id.banner_container)
         adContainer.addView(adView)
         adView.loadAd()
